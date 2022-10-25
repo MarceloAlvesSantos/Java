@@ -1,4 +1,4 @@
-package applicatin.composicao2;
+package application.composicao2;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
