@@ -10,5 +10,6 @@
 	<classpathentry kind="src" path="enumeracoes.composicao2"/>
 	<classpathentry kind="src" path="enumeracoes.composicao3"/>
 	<classpathentry kind="src" path="date"/>
+	<classpathentry kind="src" path="heranca.polimorfismo"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
