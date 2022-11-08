@@ -7,11 +7,11 @@ import entities.SavingsAccount;
 public class Programa {
 	
 	public static void main(String[] args) {
-		
+		/*// Aula sobre UPCASTING e DOWNCASTING
 		//Account acc = new Account(1001, "Marcelo", 0.0); 
 		// BusinessAccount bacc = new BusinessAccount(1002, "Karlle", 0.0, 500.0);
 		
-		// UPCASTING 
+		// UPCASTING
 		
 		// Account acc1 = bacc;
 		Account acc2 = new BusinessAccount(1003, "Bob", 0.0, 200.0);
@@ -35,7 +35,23 @@ public class Programa {
 			SavingsAccount acc5 = (SavingsAccount)acc3;
 			acc5.updatebalance();
 			System.out.println("Update!");
-		}
+		} */
+		// Aula usando super(), sobreposição e notação @Override
+		Account acc1 = new Account(1001, "Alex", 1000.0);
+		acc1.withdraw(200.0);
+		System.out.println(acc1.getBalance());
+		
+		System.out.println();
+		
+		Account acc2 = new SavingsAccount(1002, "Paula", 1000.0, 0.01);
+		acc2.withdraw(200.0);
+		System.out.println(acc2.getBalance());
+		
+		System.out.println();
+		
+		Account acc3 = new BusinessAccount(1003, "Bob", 1000.0, 500.0);
+		acc3.withdraw(200.0);
+		System.out.println(acc3.getBalance());
 		
 		
 	}

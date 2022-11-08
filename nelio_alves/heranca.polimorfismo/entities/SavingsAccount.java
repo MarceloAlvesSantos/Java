@@ -25,4 +25,13 @@ public class SavingsAccount extends Account{
 		balance += balance * interestRate;
 	}
 	
+	// Usou se o final para evitar sobreporsições multiplas
+	@Override
+	public final void withdraw(double amount) { 
+		this.balance -= amount;
+	}
+	
+	// final na classe não deixar ela ser herdada
+	// final no metodo não deixar ele ser sobreposto
+	
 }
