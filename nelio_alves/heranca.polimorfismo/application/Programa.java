@@ -8,7 +8,6 @@ public class Programa {
 		
 		BusinessAccount account = new BusinessAccount();
 		
-		account.
 	}
 	
 }
