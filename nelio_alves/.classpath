@@ -12,5 +12,6 @@
 	<classpathentry kind="src" path="date"/>
 	<classpathentry kind="src" path="heranca.polimorfismo"/>
 	<classpathentry kind="src" path="excecoes"/>
+	<classpathentry kind="src" path="projeto.um.excecoes"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
