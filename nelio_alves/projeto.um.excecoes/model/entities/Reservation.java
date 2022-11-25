@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-public class reservation {
+public class Reservation {
 	
 	private Integer roomNumber;
 	private Date checkIn;
@@ -13,10 +13,10 @@ public class reservation {
 	// É static para não instância para cada um, só vai precisar de um sdf
 	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	
-	public reservation() {
+	public Reservation() {
 	}
 
-	public reservation(Integer roomNumber, Date checkIn, Date checkOut) {
+	public Reservation(Integer roomNumber, Date checkIn, Date checkOut) {
 		this.roomNumber = roomNumber;
 		this.checkIn = checkIn;
 		this.checkOut = checkOut;
@@ -41,7 +41,7 @@ public class reservation {
 	// Usar long pois o calculo da diferença de datas retornar um long
 	public long duration() {
 		long diff = checkOut.getTime() - checkIn.getTime(); // milesegundos
-		return TimeUnit.DAYS.convert(diff, TimeUnit.MICROSECONDS); // ms para dias
+		return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS); // ms para dias
 	}
 	
 	public void updateDates(Date checkIn, Date checkOut) {
